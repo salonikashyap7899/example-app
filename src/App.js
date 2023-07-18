@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './Header';
+import Button from './Button';
+import Person from './Person';
+import List from './List';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    <div >
+     
+    <Person name="vikas" age="22"/>
+    <Button text="click" onClick={()=>console.log("CLick Me")}/>
+    <Header tittle="This Is My First Rect App"/>
+      <List items={['Javascript', 'HTML', 'CSS']} />
+  
+      
     </div>
   );
 }
